@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => (
         <Link to="/">{siteTitle}</Link>
       </p>
 
-      <div className="flex flex-row items-center justify-between gap-3">
+      <div className="flex flex-row items-center justify-between gap-4">
         {menus.map(({ id, name, to }) => (
           <p key={id} className="m-0 text-gray-600 hover:underline">
             <Link to={to}>{name}</Link>
