@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{gZkK:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),s=t.n(a),o=t("9Dj+"),r=t("H8eV");n.default=function(){return s.a.createElement(o.a,null,s.a.createElement(r.a,{title:"My Projects",description:"List of my personal projects",lang:"en"}),s.a.createElement("p",{className:"prose max-w-none"},"This is list of my personal projects"))}}}]);
+//# sourceMappingURL=component---src-pages-projects-tsx-875f69219655549dc4f7.js.map

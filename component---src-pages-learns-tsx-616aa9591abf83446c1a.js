@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"+E3w":function(e,a,n){"use strict";n.r(a);var t=n("q1tI"),o=n.n(t),r=n("9Dj+"),l=n("H8eV");a.default=function(){return o.a.createElement(r.a,null,o.a.createElement(l.a,{title:"Today I Learned",description:"List I learned today!",lang:"en"}),o.a.createElement("p",{className:"prose max-w-none"},"Today I learn about..."))}}}]);
+//# sourceMappingURL=component---src-pages-learns-tsx-616aa9591abf83446c1a.js.map

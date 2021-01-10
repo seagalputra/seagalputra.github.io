@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{QeBL:function(e,n,a){"use strict";a.r(n);var t=a("q1tI"),l=a.n(t),o=a("9Dj+"),r=a("H8eV");n.default=function(){return l.a.createElement(o.a,null,l.a.createElement(r.a,{title:"Home",description:"My Personal Blog",lang:"en"}),l.a.createElement("div",{className:"prose max-w-none"},"Hello, World"))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-b4aa24ff9f9faacd927d.js.map
