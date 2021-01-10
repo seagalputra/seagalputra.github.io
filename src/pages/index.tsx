@@ -1,4 +1,4 @@
-import { PageProps, graphql } from "gatsby"
+import { PageProps, graphql, Link } from "gatsby"
 import React from "react"
 
 import Layout from "../components/layout"
@@ -16,12 +16,17 @@ const Home: React.FC<PageProps<any>> = ({ data }) => {
         const {
           frontmatter: { title, date },
           excerpt,
+          fields: { slug },
           id,
         } = edge.node
         return (
           <div key={id} className="mb-10">
-            <h2 className="m-0 mb-3 text-black">{title}</h2>
-            <h4 className="m-0 mb-4 text-gray-400">{date}</h4>
+            <h2 className="m-0 mb-3 text-black">
+              <Link to={slug} className="hover:underline">
+                {title}
+              </Link>
+            </h2>
+            <h5 className="m-0 mb-4 text-gray-400">{date}</h5>
             <p className="prose max-w-none">{excerpt}</p>
           </div>
         )
@@ -40,7 +45,10 @@ export const query = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
           }
-          excerpt
+          excerpt(truncate: true, pruneLength: 50)
+          fields {
+            slug
+          }
         }
       }
     }
