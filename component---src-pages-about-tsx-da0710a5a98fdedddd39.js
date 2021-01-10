@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"2l/u":function(e,a,n){"use strict";n.r(a);var t=n("q1tI"),r=n.n(t),o=n("9Dj+"),l=n("H8eV");a.default=function(){return r.a.createElement(o.a,null,r.a.createElement(l.a,{title:"About Me",lang:"en",description:"Everything about creator!"}),r.a.createElement("p",{className:"prose max-w-none"},"Hello, my name is Dwiferdio Seagal Putra"))}}}]);
-//# sourceMappingURL=component---src-pages-about-tsx-da0710a5a98fdedddd39.js.map
