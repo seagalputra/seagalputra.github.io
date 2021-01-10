@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Seagal Putra ‍",
+    title: "Seagal Putra",
     description: "My personal blog",
     author: "@seagalputra",
   },
@@ -29,6 +29,13 @@ module.exports = {
     },
     "gatsby-plugin-offline",
     "gatsby-plugin-postcss",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/contents/`,
+        name: "markdown-pages",
+      },
+    },
     "gatsby-transformer-remark",
   ],
 }

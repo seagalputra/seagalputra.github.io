@@ -17,13 +17,13 @@ const menus: Array<MenuItem> = [
 const Header = ({ siteTitle }) => (
   <nav className="my-10">
     <div className="max-w-screen-lg my-auto mx-auto flex flex-row items-center justify-between">
-      <p className="m-0 text-2xl font-bold text-gray-600">
+      <p className="m-0 text-2xl font-bold">
         <Link to="/">{siteTitle}</Link>
       </p>
 
       <div className="flex flex-row items-center justify-between gap-4">
         {menus.map(({ id, name, to }) => (
-          <p key={id} className="m-0 text-gray-600 hover:underline">
+          <p key={id} className="m-0 hover:underline">
             <Link to={to}>{name}</Link>
           </p>
         ))}
