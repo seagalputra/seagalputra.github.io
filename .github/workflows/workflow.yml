@@ -22,7 +22,7 @@ jobs:
           GATSBY_ENV: "prod"
 
       - name: Deploy
-        run: git config --global user.name ${{ GIT_USERNAME }} && git config --global user.email ${{ GIT_EMAIL }} && yarn run deploy
+        run: git config --global user.name $GIT_USERNAME && git config --global user.email $GIT_EMAIL && yarn run deploy
         env:
           GIT_USERNAME: "seagalputra"
           GIT_EMAIL: "seagalputra@gmail.com"
