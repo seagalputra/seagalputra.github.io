@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{QeBL:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),o=t.n(a),s=t("9Dj+"),i=t("H8eV");n.default=function(){return o.a.createElement(s.a,null,o.a.createElement(i.a,{title:"Home",description:"My Personal Blog",lang:"en"}),o.a.createElement("div",{className:"prose max-w-none"},"This site is under construction!"))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-a88f0c2923d89c5c6dbe.js.map
