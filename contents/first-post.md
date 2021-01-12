@@ -3,6 +3,12 @@ title: "My First Post"
 date: "2021-01-10"
 ---
 
-This is my first blog post. I still developing this site. 
+Hello, World
 
-So, if there are some bugs or mistaken please understand it.
+```java{numberLines: true}
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello, World!");
+  }
+}
+```
