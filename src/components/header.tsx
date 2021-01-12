@@ -17,7 +17,7 @@ const menus: Array<MenuItem> = [
 const Header = ({ siteTitle }) => (
   <nav className="my-10">
     <div className="max-w-screen-lg my-auto mx-auto flex flex-row items-center justify-between">
-      <p className="m-0 text-2xl font-bold">
+      <p className="m-0 text-xl font-bold">
         <Link to="/">{siteTitle}</Link>
       </p>
 
