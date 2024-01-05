@@ -1,5 +1,6 @@
 import { json } from '@sveltejs/kit';
 import type { Post } from '$lib/types';
+import { yearFromDate } from '$lib/utils';
 
 async function getPosts() {
 	let posts: Post[] = [];
@@ -23,8 +24,41 @@ async function getPosts() {
 	return posts;
 }
 
+function groupPostsByYear(posts: Post[]) {
+	const postByYear: Record<string, Post[]> = {};
+	for (const post of posts) {
+		const year = yearFromDate(post.date);
+
+		if (postByYear[year]) {
+			postByYear[year].push(post);
+		} else {
+			postByYear[year] = [post];
+		}
+	}
+
+	let groupedPosts: Array<{ year: string; posts: Post[] }> = [];
+	for (const [key, value] of Object.entries(postByYear)) {
+		const groupedPost: { year: string; posts: Post[] } = {
+			year: '',
+			posts: []
+		};
+
+		groupedPost.year = key;
+		groupedPost.posts = value;
+
+		groupedPosts.push(groupedPost);
+	}
+
+	groupedPosts = groupedPosts.sort(
+		(first, second) => parseInt(second.year, 10) - parseInt(first.year, 10)
+	);
+
+	return groupedPosts;
+}
+
 export async function GET() {
 	const posts = await getPosts();
+	const groupedPost = groupPostsByYear(posts);
 
-	return json(posts);
+	return json(groupedPost);
 }

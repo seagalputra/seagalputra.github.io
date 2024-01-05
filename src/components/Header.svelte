@@ -6,7 +6,7 @@
 			<a class="hover:underline" href="/">home</a>
 		</li>
 		<li class="px-2">
-			<a class="hover:underline" href="/blog">blog</a>
+			<a class="hover:underline" href="/archive">blog</a>
 		</li>
 		<li class="px-2">
 			<a class="hover:underline" href="/projects">projects</a>

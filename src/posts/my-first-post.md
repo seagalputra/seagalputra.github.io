@@ -1,14 +1,12 @@
 ---
 title: My First Post
 description: This is my first post.
-date: '2023-4-14'
+date: '2023-04-14'
 categories:
   - sveltekit
   - svelte
 published: true
 ---
-
-## Markdown
 
 Hello! This is my first post written in markdown and published using Svelte.
 
