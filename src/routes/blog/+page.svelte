@@ -1,4 +1,8 @@
-<h1 class="font-bold text-xl text-slate-black">Blog Archive</h1>
+<script lang="ts">
+	export let data;
+</script>
+
+<h1 class="font-bold text-xl">Blog Archive</h1>
 <p class="mt-2">
 	The published articles from my mind, I categorized them by year and reverse chronological order.
 	Enjoy your reading!
@@ -8,18 +12,12 @@
 	<div>
 		<h2 class="font-semibold text-xl">2023</h2>
 		<ul>
-			<li class="flex justify-between items-center">
-				<a class="hover:underline" href="/blog/my-first-post">Right In Front of Me</a>
-				<p class="text-slate-400">Dec 2023</p>
-			</li>
-			<li class="flex justify-between items-center">
-				<a class="hover:underline" href="/blog/my-first-post">Data Structure 101 - Linked List</a>
-				<p class="text-slate-400">Nov 2023</p>
-			</li>
-			<li class="flex justify-between items-center">
-				<a class="hover:underline" href="/blog/my-first-post">My First Post</a>
-				<p class="text-slate-400">Nov 2023</p>
-			</li>
+			{#each data.posts as post}
+				<li class="flex justify-between items-center">
+					<a class="hover:underline" href="/blog/{post.slug}">{post.title}</a>
+					<p class="text-slate-400">{post.date}</p>
+				</li>
+			{/each}
 		</ul>
 	</div>
 </div>
